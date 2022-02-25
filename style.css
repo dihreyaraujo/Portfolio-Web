@@ -1,60 +1,142 @@
-@charset "UTF-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Share+Tech+Mono&display=swap');
+
+/* ícones de redes sociais */
+
+.square-icons {
+
+  padding: 10px; /* espaçamento */
+
+  font-size: 18px; /* tamanho do icone */
+
+  width: 18px;  /* tamanho do fundo */
+
+  text-align: center;
+
+  text-decoration: none;
+
+  margin: 5px 25px; /* espaçamento entre eles */
+
+  background: #c5c0c0; /* cor do fundo */
+
+  color: #fff; /*cor do icone */
+
+}
+
+.square-icons:hover {
+
+    background: #ccc;  /*  cor de fundo com mouse encima */
+
+    color: #fff;  /* cor do icone com mouse encima */
+
+    opacity: 0.7;
+
+}
+/* fim dos ícones de redes sociais */
 
 body{
     margin: 0px;
+    background-color: rgb(211, 211, 211);
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
-    padding: 50px;
-    margin: auto;
-    color: white;
+header{
+    height: 450px;
+    background-image: url('laptop2.jpg');
+    background-position: center center;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
-    
+    margin-bottom: -140px;
 }
 
-section ul{
-    display: inline-block;
+header > h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    margin-top: 0px;   
+    margin-bottom: 0px; 
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+    padding-top: 10px;
 }
 
-section li{
-    
-    padding-top: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+header > p{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+    margin-bottom: 50px;
 }
 
-img{
-    width: 225px;
+#perfil{
+    width: 300px;
     height: 300px;
-    border-radius: 10px;
-    margin-left: 50px;
-    margin-top: 40px;
-    
-}
-a{
-    color: rgb(39, 39, 39);
-    padding-left: 50px;
-    padding-bottom: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border: 3px solid rgb(211, 211, 211);
+
+    margin-bottom: 100px;
 }
 
-a:hover{
-    text-decoration: underline;
-    color: black;
+div#desc{
+    background-color: white;
+    height: 300px;
+    width: 800px;
+    margin: 20px auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 h2{
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 30px;
+    font-size: 3em;
+    font-weight: 400;
+    color: #ada9a9;
+    text-shadow: 1.5px 1px 2px rgba(0, 0, 0, 0.26);
+    margin-bottom: 30px;
+    
 }
-ul#listah2{
-    padding-left: 70px;
-    font-family: Arial, Helvetica, sans-serif;
+
+#description{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2em;
+    width: 550px;
+    margin: auto;
+    margin-bottom: 150px;
 }
-p{
-    width: 40vw;
+
+div#softskill{
+    background-color: white;
+    width: 800px;
+    margin: 20px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #6b6666;
+    text-shadow: 1.5px 1px 2px rgba(0, 0, 0, 0.26);
+    margin-bottom: 30px;
+}
+
+#soft > p{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
+    width: 450px;
+    margin: auto;
 }
