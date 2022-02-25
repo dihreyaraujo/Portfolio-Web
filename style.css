@@ -44,6 +44,7 @@ header{
     height: 450px;
     background-image: url('laptop2.jpg');
     background-position: center center;
+    background-attachment: fixed;
     text-align: center;
     margin-bottom: -140px;
 }
