@@ -1,175 +1,190 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Share+Tech+Mono&display=swap');
+
+html{
+    scroll-behavior: smooth 
+}
+
+body{
+    margin: 0px;
+    background-color: #303769;
+}
 
 /* ícones de redes sociais */
 
 .square-icons {
 
-  padding: 10px; /* espaçamento */
-
-  font-size: 18px; /* tamanho do icone */
-
-  width: 18px;  /* tamanho do fundo */
-
-  text-align: center;
-
-  text-decoration: none;
-
-  margin: 5px 25px; /* espaçamento entre eles */
-
-  background: #c5c0c0; /* cor do fundo */
-
-  color: #fff; /*cor do icone */
-
-}
-
-.square-icons:hover {
-
-    background: #ccc;  /*  cor de fundo com mouse encima */
-
-    color: #fff;  /* cor do icone com mouse encima */
-
-    opacity: 0.7;
-
-    padding: 13px;
-
-    transition: 0.2s;
-
-}
-/* fim dos ícones de redes sociais */
-
-body{
-    margin: 0px;
-    background-color: rgb(211, 211, 211);
-}
-
-header{
-    height: 450px;
-    background-image: url('laptop2.jpg');
-    background-position: center center;
-    background-attachment: fixed;
+    padding: 10px; /* espaçamento */
+  
+    font-size: 18px; /* tamanho do icone */
+  
+    width: 18px;  /* tamanho do fundo */
+  
     text-align: center;
-    margin-bottom: -140px;
-}
+  
+    text-decoration: none;
+  
+    margin: 5px 20px; /* espaçamento entre eles */
+  
+    background:#6D7BEC ; /* cor do fundo */ 
+  
+    color: #fff; /*cor do icone */
+  
+  }
+  
+  .square-icons:hover {
+  
+      background: #4c5eeb ;  /*  cor de fundo com mouse encima */
+  
+      color: #fff;  /* cor do icone com mouse encima */
+  
+      opacity: 0.7;
+  
+  }
+  /* fim dos ícones de redes sociais */
 
-header > h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 5em;
-    margin-top: 0px;   
-    margin-bottom: 0px; 
+  /* cabeçalho */
+ 
+  nav{
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+    padding-top: 35px;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+    background-color: #303769;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+  }
+
+  .menu{
     color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
-    padding-top: 10px;
-}
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 30px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.274); 
+    transition: 0.4s;      
+  }
 
-header > p{
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1.5em;
-    color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
-    margin-bottom: 50px;
-}
+  .menu:hover{
+    font-size: 1.3em;
+    transition: 0.4s;   
+  }
 
-#perfil{
+  img#perfil{
+    margin-top: 175px;  
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
-    margin: auto;
-    border: 3px solid rgb(211, 211, 211);
+    margin-left: 70px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+    margin-bottom: 283px;
 
-    margin-bottom: 100px;
-}
+  }
 
-div#desc{
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    margin: 20px auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.158);
-    border-radius: 20px;
-    margin-bottom: 20px;
-    float: left;
-    margin-left: 100px;
-}
+  #social{
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.274);
+  }
 
-h2{
+  .socialm{
+      position: absolute;
+      left: 300px;
+      top: 250px;
+      text-align: center;
+      padding-left: 300px;
+  }
+
+  section#about{
+    margin-left: 95px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.274);
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 30px;
-    font-size: 2.5em;
-    font-weight: 400;
-    color: #ada9a9;
-    text-shadow: 1.5px 1px 2px rgba(0, 0, 0, 0.26);
-    margin-bottom: 30px;
-    
-}
+    font-size: 1.3em;
+    width: 250px;
+    padding-top: 200px;
+  }
 
-#description{
+  section#about p{
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #6d7cec;
+    box-shadow: 0px 0px 4px #6d7cec;
+    transition: 1s;
+    line-height: 30px;
+    margin-bottom: 300px;
+  }
+
+  section#about p:hover{
+      background-color: #6d7cec;
+      box-shadow: none;
+      transition: 1s;
+  }
+
+  #prog{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 785px;
+      left: 670px;
+      padding-top: 200px;
+  }
+
+     #soft{
+      padding-top: 90px;
+  } 
+  
+  #softskill{
+    margin-left: 95px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.274);
     text-align: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1.2em;
-    width: 350px;
-    margin: auto;
-    margin-bottom: 150px;
-}
-
-div#softskill{
-    background-color: white;
-    width: 500px;
-    margin: 20px auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.158);
-    border-radius: 20px;
-    margin-bottom: 40px;
-    float: right;
-    margin-right: 100px;
-    
-}
-
-h3{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 30px;
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #6b6666;
-    text-shadow: 1.5px 1px 2px rgba(0, 0, 0, 0.26);
-    margin-bottom: 30px;
-}
-
-#soft > p{
-    text-align: center;
-    font-family: 'Share Tech Mono', monospace;
     font-size: 1em;
     width: 450px;
-    margin: auto;
-}
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #6d7cec;
+    box-shadow: 0px 0px 4px #6d7cec;
+    transition: 1s;
+    line-height: 30px;
+    margin-bottom: 300px;
+  }
 
-#hard{
-    background-color: white;
-    width: 400px;
-    height: 295px;
-    position: absolute;
-    top: 1090px;
-    left: 100px;
-    padding-top: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.158);
-}
+  #softskill:hover{
+    background-color: #6d7cec;
+    box-shadow: none;
+    transition: 1s;
+  }
 
-.hskill{
-    width: 100px;
-    height: 100px;
-    padding-left: 10px;
-}
+  #brain{
+      width: 440px;
+      height: 300px;
+      position: absolute;
+      top: 1810px;
+      left: 670px;
+  }
 
-.hskill2{
-    width: 70px;
-    height: 100px;
-}
+  .hskill{
+      margin-top: 100px;
+      width: 200px;
+      height: 200px;
+      margin-left: 95px;
+      margin-bottom: 200px;
+  }
+
+
+
+
+  
+
+  
+
+  
+
+  
