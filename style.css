@@ -243,6 +243,14 @@ body{
   }
 }
 
+@media screen and (min-width: 720px) {
+  .socialm{
+    padding-left: 10px;
+    left: 500px;
+    width: 450px;
+  }
+}
+
 
 
 
