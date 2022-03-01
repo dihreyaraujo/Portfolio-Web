@@ -178,6 +178,71 @@ body{
       margin-bottom: 200px;
   }
 
+  /* ----------------------------------------- --------------------------------------- --------------------------------------*/
+
+
+/* ----------------------------------------- ADAPTAÇÃO DE RESOLUÇÃO PARA SMARTPHONES --------------------------------------*/
+
+
+/* ----------------------------------------- --------------------------------------- --------------------------------------*/
+
+@media screen and (max-width: 480px) {
+  nav{
+    font-size: 0.8em;
+    padding-left: 45px;
+  }
+  
+  .menu:hover{
+    font-size: 1em;
+  }
+
+  img#perfil{
+    width: 250px;
+    height: 250px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+  }
+
+  .square-icons{
+    font-size: 27px;
+    width: 27px;
+    margin: 5px 10px;
+  }
+  
+  .socialm{
+    position: absolute;
+    padding-left: 25px;
+    top: 500px;
+    left: 5px;
+  }
+
+  section#about{
+    margin-left: 107px;
+    margin-top: 350px;  
+    font-size: 1em; 
+    width: 200px;
+  }
+
+  #prog{
+    display: none;
+  }
+
+  #softskill{
+    margin-left: 40px;
+    width: 290px;
+  }
+
+  #brain{
+    display: none;
+  }
+
+  .hskill{
+    width: 100px;
+    height: 100px;
+    margin-left: 45px;
+  }
+}
+
 
 
 
