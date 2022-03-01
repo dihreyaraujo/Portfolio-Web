@@ -188,8 +188,8 @@ body{
 
 @media screen and (max-width: 480px) {
   nav{
-    font-size: 0.8em;
-    padding-left: 45px;
+    font-size: 1em;
+    padding-left: 20px;
   }
   
   .menu:hover{
