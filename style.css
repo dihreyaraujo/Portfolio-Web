@@ -252,6 +252,14 @@ body{
 /* ----------------------------------------- --------------------------------------- --------------------------------------*/
 
 @media screen and (min-width: 720px) {
+  nav{
+    font-size: 1.5em;
+  }
+
+  .menu:hover{
+    font-size: 1em;
+  }
+  
   .socialm{
     padding-left: 10px;
     left: 500px;
