@@ -55,8 +55,18 @@ body{
     padding-bottom: 35px;
     background-color: #303769;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
+  }
+
+  #welcome {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: fixed;
+    z-index: 99;
+    margin-left: 650px;
+    font-size: 1.5em;
+    margin-top: 30px;
   }
 
   .menu{
@@ -191,6 +201,10 @@ body{
     font-size: 1em;
     padding-left: 20px;
   }
+
+  #welcome {
+    display: none;
+  }
   
   .menu:hover{
     font-size: 1em;
@@ -258,6 +272,10 @@ body{
 
   .menu:hover{
     font-size: 1em;
+  }
+
+  #welcome {
+    display: none;
   }
   
   .socialm{
