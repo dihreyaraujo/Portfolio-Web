@@ -4,54 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfólio</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Portfólio Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="fadeIn">
+    <header id="header-menu">
+        <h1>My Portfolio</h1>
+        <nav id="menu">
+            <a href="#">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#soft-skill">Soft Skills</a>
+            <a href="#hard-skills">Hard Skills</a>
+            <a href="#social-media">Social Media</a>
+        </nav>
+    </header>
 
-<body>
-    <nav>
-            <a class="menu" href="#">Home</a>
-            <a class="menu" href="#about">About</a>
-            <a class="menu" href="#soft">Soft Skills</a>
-            <a class="menu" href="#hards">Hard Skills</a>
-    </nav>
-
-    <h1 id="welcome">Seja Bem-Vindo</h1>    
-    
-    <img id="perfil" src="perfilp.jpeg" alt="perfil">
-
-        <div class="socialm">
-            <h2 id="social">Social Media</h2>
-            <a href="https://www.facebook.com/dihrey.henrique/" class="square-icons fa fa-facebook" target="_blank"></a>
-            <a href="https://twitter.com/Dihrey1" class="square-icons fa fa-twitter" target="_blank"></a>
-            <a href="https://www.instagram.com/dihreyaraujo/" class="square-icons fa fa-instagram" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/dihrey-araujo-0b03a6218/" class="square-icons fa fa-linkedin" target="_blank"></a>
-            <a href="https://github.com/dihreyaraujo" class="square-icons fa fa-github" target="_blank"></a>
-        </div>
-
-    <section id="about">
-        <p> Sou Brasileiro, Nascido na cidade de Volta Redonda - Rio de Janeiro, Tenho 20 anos, Faço aniversário dia 09 de Novembro, Um aspirante à programador.</p>
+    <section class="container-section">
+        <section id="about">
+            <div id="text-about">
+                <p class="p-color">I am a student of Web Development - Full Stack</p>
+                <h2>My Name Is Dihrey</h2>
+                <h2>Welcome!</h2>
+                <p>I'm Brazilian, I was born in Volta Redonda - Rio de Janeiro, I'm 20 years old, I have my birthday on November 9th, I'm an aspiring programmer.</p>
+        
+            </div>
+            <img src="perfil.png" alt="Um homem com cabelo castanho escuro e curto, com óculos e camisa do batman, este sou eu.">
+        </section>
     </section>
-    
-    <img id="prog" src="proga.png" alt="programador">
+    <section class="container-section">
+        <section id="about-me">
+            <div class="about-me-text">
+                <h2>About</h2>
+                <p>I'm a very outgoing person, I like to go out with my friends going to parties or just making an appointment with everyone to go to someone's house to make a hamburger and chat. In my spare time I like to play video games, practice programming with my own projects that I develop, watch videos on YouTube, and play RPG (Role Playing Game). I've loved technology since I was a kid, I've always had an easy time learning about technology, among other things.</p>
+            </div>
+            <div class="dice">
+                <h2>RPG DICE</h2>
+                <p class="p-dice-luck">Roll the dice and test your luck</p>
+                <select name="dados" id="dice">
+                    <option value="1d4">1d4</option>
+                    <option value="1d6">1d6</option>
+                    <option value="1d8">1d8</option>
+                    <option value="1d10">1d10</option>
+                    <option value="1d12">1d12</option>
+                    <option value="1d20">1d20</option>
+                </select>
+                <img src="dice/d4.png" alt="1d4" id="d4">
+                <img src="dice/d6.png" alt="1d6" id="d6">
+                <img src="dice/d8.png" alt="1d8" id="d8">
+                <img src="dice/d10.png" alt="1d10" id="d10">
+                <img src="dice/d12.png" alt="1d12" id="d12">
+                <img src="dice/d20.png" alt="1d20" id="d20">
+                <p id="dice-text"></p>
+            </div>
+        </section>
+    </section>
+    <section class="container-section">
+        <section id="soft-skill">
+            <div class="soft-skill-text">
+                <h2>Soft Skills</h2>
+                <h3>Sense Of Leadership</h3>
+                <p>I like to play the role of leader in a group whenever the group needs it, I can deal well emotionally with problematic situations</p>
+                <h3>Charismatic</h3>
+                <p>I am very charismatic, I have no difficulty in public speaking, I can be a good communicator.</p>
+                <h3>Organized</h3>
+                <p>I am well organized both in my study/work environment and at home as well.</p>
+                <h3>Intelligent</h3>
+                <p>I find it easy to learn. I'm always studying in books or on the internet.</p>
+            </div>
+            <img src="brain2.png" alt="">
+        </section>
+    </section>
+    <section id="hard-skills">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
 
-    <section id="soft">
-        <div id="softskill">           
-            <h3>Senso de liderança</h3>
-            <p>Gosto de fazer o papel de líder em um grupo sempre que o grupo precisar, consigo lidar bem emocionalmente com situações problemáticas</p>
-            <h3>Carismático</h3>
-            <p>Sou bem carismático, não tenho dificuldade para falar em público, consigo ser um bom comunicador.</p>
-            <h3>Organizado</h3>
-            <p>Sou bem organizado tanto em meu ambiente de estudo/trabalho quanto em casa também. </p>
-            <h3>Inteligente</h3>
-            <p>Tenho facilidade em aprender e sempre procuro estudar seja em livro ou na internet.</p>
-        </div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />    
     </section>
 
-    <img id="brain" src="brain.png" alt="cerebro">
+    <footer id="social-media">
+        <a href="https://www.facebook.com/dihrey.henrique/" class="square-icons fa fa-facebook" target="_blank"></a>
+        
+        <a href="https://twitter.com/Dihrey1" class="square-icons fa fa-twitter" target="_blank"></a>
+        
+        <a href="https://www.instagram.com/dihreyaraujo/" class="square-icons fa fa-instagram" target="_blank"></a>
+        
+        <a href="https://www.linkedin.com/in/dihrey-araujo-0b03a6218/" class="square-icons fa fa-linkedin" target="_blank"></a>
+        
+        <a href="https://github.com/dihreyaraujo" class="square-icons fa fa-github" target="_blank"></a>
 
-    <img id="hards" class="hskill" src="html5.png" alt="html5">
-    <img class="hskill" src="css3.png" alt="css3">
+        <p> © All rights reserved - Dihrey Araujo, 2022</p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
