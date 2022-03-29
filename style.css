@@ -140,7 +140,13 @@ h2{
     border-radius: 50%;
     object-fit: cover;
     background-color: #26292c50;
-    box-shadow: 1px 1px 30px #0000007a;   
+    box-shadow: 1px 1px 30px #0000007a;  
+    transition: 2s; 
+}
+
+#about img:hover{
+    box-shadow: 1px 1px 30px #6b6a6ae7;
+    transition: 2s;
 }
 
 #about-me{
