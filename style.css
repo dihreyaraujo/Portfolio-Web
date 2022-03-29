@@ -271,7 +271,7 @@ footer{
   
     text-decoration: none;
   
-    margin: 10px 20px; /* espaçamento entre eles */
+    margin: 25px 20px 15px 20px; /* espaçamento entre eles */
   
     background:#414244 ; /* cor do fundo */ 
   
@@ -293,5 +293,5 @@ footer{
 }
 
 footer p{
-    margin-top: 30px;
+    margin-top: 5px;
 }
