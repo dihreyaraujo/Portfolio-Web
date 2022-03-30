@@ -340,6 +340,15 @@ footer p{
 }
 
 @media screen and (max-width: 740px){
+    #header-menu{
+        display: inline-block;
+    }
+
+    #header-menu h1{
+        text-align: center;
+        margin: 0;
+    }
+    
     #menu{
         display: none;
         flex-direction: column;
