@@ -342,11 +342,25 @@ footer p{
 @media screen and (max-width: 740px){
     #menu{
         display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        left: 20px;
+        background-color: #4142449d;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #menu a{
+        margin: 0;
+        margin-bottom: 10px;
     }
     #menu-hamburguer{
         display: inline-block;
         position: absolute;
         left: 30px;
+        top: 15px;
+        cursor: pointer;
     }
     #about-me{
         margin-left: 0;

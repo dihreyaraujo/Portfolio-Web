@@ -114,3 +114,22 @@ diceImageD20.addEventListener('click', function(){
         diceText.style.left = '1470px'
     }
 })
+
+
+
+let menuHamburguer = document.getElementById('menu-hamburguer');
+
+
+menuHamburguer.addEventListener('click', function(){
+    let menuContainer = document.getElementById('menu');
+    if(menuContainer.style.display == 'none'){
+        menuContainer.style.display = 'flex';
+    }
+    else{
+        menuContainer.style.display = 'none';
+    }
+})
+
+
+
+
