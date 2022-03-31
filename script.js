@@ -116,20 +116,29 @@ diceImageD20.addEventListener('click', function(){
 })
 
 
+window.onload = function(){
+    if (window.matchMedia("(max-width:740px)").matches) {
+        let menuHamburguer = document.getElementById('menu-hamburguer');
+        let menu = document.getElementById('menu');
+        menu.style.display = 'none';
 
-let menuHamburguer = document.getElementById('menu-hamburguer');
+        menuHamburguer.addEventListener('click', function(){
+            let menuContainer = document.getElementById('menu');
+            if(menuContainer.style.display == 'none'){
+                menuContainer.style.display = 'flex';
+            }
+            else{
+                menuContainer.style.display = 'none';
+            }
+        })
 
-
-menuHamburguer.addEventListener('click', function(){
-    let menuContainer = document.getElementById('menu');
-    if(menuContainer.style.display == 'none'){
-        menuContainer.style.display = 'flex';
     }
-    else{
-        menuContainer.style.display = 'none';
-    }
-})
 
+    else if (window.matchMedia("(min-width:741px)").matches) {
+        let menu = document.getElementById('menu');
+        menu.style.display = 'flex';
+    }
+}
 
 
 
