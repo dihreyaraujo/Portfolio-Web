@@ -146,7 +146,34 @@ window.onload = function(){
 const lightMode = document.querySelector('.light');
 const darkMode = document.querySelector('.dark');
 const headerMenu = document.getElementById('header-menu');
+const aboutFirst = document.getElementById('about');
+const pColor = document.querySelector('.p-color');
+const perfil = document.getElementById('perfil-photo');
+const aboutMe = document.getElementById('about-me');
+const softSkill = document.getElementById('soft-skill');
+const footer = document.getElementById('social-media');
+const containerSection = document.querySelectorAll('.container-section')
 
 lightMode.addEventListener('click', () => {
-  
-})
+  headerMenu.style.backgroundColor = '#59595986';
+  document.body.style.backgroundColor = '#bdbfc1';
+  aboutFirst.style.color = '#302f2f';
+  pColor.style.color = '#0008f8';
+  perfil.style.opacity = '80%'
+  aboutMe.style.color = 'black';
+  softSkill.style.color = 'black';
+  footer.style.backgroundColor = '#59595986';
+  containerSection.forEach((element) => element.style.borderBottom = '1px solid #2c2b2686');
+});
+
+darkMode.addEventListener('click', () => {
+  headerMenu.style.backgroundColor = '#2c2b2686';
+  document.body.style.backgroundColor = '#2C2F33';
+  aboutFirst.style.color = '#F2F2F2';
+  pColor.style.color = '#6382BF';
+  perfil.style.opacity = '60%'
+  aboutMe.style.color = 'white';
+  softSkill.style.color = 'white';
+  footer.style.backgroundColor = '#26292c86';
+  containerSection.forEach((element) => element.style.borderBottom = '1px solid #e2e2e215');
+});

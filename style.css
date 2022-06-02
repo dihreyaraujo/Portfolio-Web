@@ -76,11 +76,14 @@ body p{
 
 .light {
   width: 30px;
+  margin-left: 40px;
+  cursor: pointer;
 }
 
 .dark {
   width: 20px;
-  color: white;
+  margin-left: 40px;
+  cursor: pointer;
 }
 
 #menu-hamburguer{
@@ -417,5 +420,13 @@ footer p{
         font-size: 18px;
         width: 40px;
         margin: 25px 10px 15px 10px;
+    }
+    .light{
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .dark{
+      margin: 0;
     }
 }
