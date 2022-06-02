@@ -141,4 +141,12 @@ window.onload = function(){
 }
 
 
+//Configurando Dark Mode e Light Mode
 
+const lightMode = document.querySelector('.light');
+const darkMode = document.querySelector('.dark');
+const headerMenu = document.getElementById('header-menu');
+
+lightMode.addEventListener('click', () => {
+  
+})
