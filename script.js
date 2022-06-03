@@ -152,7 +152,8 @@ const perfil = document.getElementById('perfil-photo');
 const aboutMe = document.getElementById('about-me');
 const softSkill = document.getElementById('soft-skill');
 const footer = document.getElementById('social-media');
-const containerSection = document.querySelectorAll('.container-section')
+const containerSection = document.querySelectorAll('.container-section');
+const links = document.querySelectorAll('.link');
 
 lightMode.addEventListener('click', () => {
   headerMenu.style.backgroundColor = '#59595986';
@@ -164,6 +165,20 @@ lightMode.addEventListener('click', () => {
   softSkill.style.color = 'black';
   footer.style.backgroundColor = '#59595986';
   containerSection.forEach((element) => element.style.borderBottom = '1px solid #2c2b2686');
+  links.forEach((element) => {
+    let $JQuery2 = jQuery.noConflict()
+    $JQuery2(function() {
+      $JQuery2(element).hover(
+          // função que adiciona a classe
+          function(){
+            $JQuery2(element).css('color', '#0008f8');
+          },
+          // função que remove a classe
+          function(){
+            $JQuery2(element).css('color', '#F2F2F2');
+          });
+    });
+  })
 });
 
 darkMode.addEventListener('click', () => {
@@ -176,4 +191,18 @@ darkMode.addEventListener('click', () => {
   softSkill.style.color = 'white';
   footer.style.backgroundColor = '#26292c86';
   containerSection.forEach((element) => element.style.borderBottom = '1px solid #e2e2e215');
+  links.forEach((element) => {
+    let $JQuery2 = jQuery.noConflict()
+    $JQuery2(function() {
+      $JQuery2(element).hover(
+          // função que adiciona a classe
+          function(){
+            $JQuery2(element).css('color', '#6382BF');
+          },
+          // função que remove a classe
+          function(){
+            $JQuery2(element).css('color', '#F2F2F2');
+          });
+    });
+  })
 });
